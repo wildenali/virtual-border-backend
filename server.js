@@ -8,6 +8,10 @@ const PORT = 8000;
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
+// Panggi routes
+var routes = require('./routes');
+routes(app);
+
 app.get('/', (req, res) => {
   res.send('Hello World...')
 })

@@ -42,3 +42,24 @@ VALUES  (NULL, 'node_1', '0', '0', current_timestamp(), current_timestamp()),
 
 - Create a new file and name it server.js
 - Run the server file with the command `$ node server.js` in the terminal
+
+# Create a Connection to MySQL
+
+1. Create a Connection File
+
+   - Create a new file and name it koneksi.js
+
+2. Create a Response File
+
+   - Create a new file and name it respon.js
+
+3. Create a Controller File
+
+   - Create a new file and name it kontroler.js
+
+4. Create a Routes File
+
+   - Create a new file and name it routes.js
+
+5. Run Server
+   - Run the server file with the command `$ node server.js` in the terminal
