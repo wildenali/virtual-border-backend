@@ -23,3 +23,17 @@
 - speaker_state : int(2)
 - motion_timestamp : current_timestamp() (default)
 - speaker_timestamp : current_timestamp() (default)
+
+```
+INSERT INTO `pik_golf_island` (`id_sensor`, `name`, `motion_state`, `speaker_state`, `motion_timestamp`, `speaker_timestamp`)
+VALUES  (NULL, 'node_1', '0', '0', current_timestamp(), current_timestamp()),
+        (NULL, 'node_2', '0', '0', current_timestamp(), current_timestamp()),
+        (NULL, 'node_3', '0', '0', current_timestamp(), current_timestamp()),
+        (NULL, 'node_4', '0', '0', current_timestamp(), current_timestamp()),
+        (NULL, 'node_5', '0', '0', current_timestamp(), current_timestamp()),
+        (NULL, 'node_6', '0', '0', current_timestamp(), current_timestamp()),
+        (NULL, 'node_7', '0', '0', current_timestamp(), current_timestamp()),
+        (NULL, 'node_8', '0', '0', current_timestamp(), current_timestamp()),
+        (NULL, 'node_9', '0', '0', current_timestamp(), current_timestamp()),
+        (NULL, 'node_10', '0', '0', current_timestamp(), current_timestamp());
+```
