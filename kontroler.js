@@ -18,12 +18,26 @@ exports.tampilSemuaSensorMotion = function(req, res) {
   })
 }
 
-// Menampilkan semua data sensor
+// Menampilkan berdasarkan Id Sensor
 exports.tampilBerdasarkanIdSensor = function(req, res) {
   
   let id = req.params.id;
 
   connection.query('SELECT * FROM pik_golf_island WHERE id_sensor = ?', [id], function(error, rows, fields) {
+    if (error) {
+      console.log(error);
+    } else {
+      response.ok(rows, res);
+    }
+  })
+}
+
+// Menampilkan Berdasarkan Name Sensor
+exports.tampilBerdasarkanNameSensor = function(req, res) {
+  
+  let name = req.params.name;
+
+  connection.query('SELECT * FROM pik_golf_island WHERE name = ?', [name], function(error, rows, fields) {
     if (error) {
       console.log(error);
     } else {

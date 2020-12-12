@@ -88,6 +88,13 @@ VALUES  (NULL, 'node_1', '0', '0', current_timestamp(), current_timestamp()),
 # CRUD - Read Data by ...
 
 1. Read Data by id_sensor
+
    - Edit the kontroler.js and routes.js files
    - Run the server file with the command `$ node server.js` in the terminal
    - Open browser and for example type `http://localhost:8000/tampilBerdasarkanId/1` on address bar
+
+2. Read Data by name
+
+   - Edit the kontroler.js and routes.js files
+   - Run the server file with the command `$ node server.js` in the terminal
+   - Open browser and for example type `http://localhost:8000/tampilBerdasarkanName/node_3` on address bar
