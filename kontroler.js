@@ -45,3 +45,17 @@ exports.tampilBerdasarkanNameSensor = function(req, res) {
     }
   })
 }
+
+// Menampilkan Berdasarkan Motion State
+exports.tampilBerdasarkanMotionState = function(req, res) {
+  
+  let motion = req.params.motionState;
+
+  connection.query('SELECT * FROM pik_golf_island WHERE motion_state = ?', [motion], function(error, rows, fields) {
+    if (error) {
+      console.log(error);
+    } else {
+      response.ok(rows, res);
+    }
+  })
+}
