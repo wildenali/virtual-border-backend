@@ -20,4 +20,7 @@ module.exports = function(app) {
 
   app.route('/tampilBerdasarkanMotion/:motionState')
     .get(jsonku.tampilBerdasarkanMotionState);
+
+  app.route('/tampilBerdasarkanSpeaker/:speakerState')
+    .get(jsonku.tampilBerdasarkanSpeakerState);
 }

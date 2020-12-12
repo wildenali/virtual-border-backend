@@ -104,3 +104,9 @@ VALUES  (NULL, 'node_1', '0', '0', current_timestamp(), current_timestamp()),
    - Edit the kontroler.js and routes.js files
    - Run the server file with the command `$ node server.js` in the terminal
    - Open browser and for example type `http://localhost:8000/tampilBerdasarkanMotion/1` on address bar
+
+4. Read Data by speaker_state
+
+   - Edit the kontroler.js and routes.js files
+   - Run the server file with the command `$ node server.js` in the terminal
+   - Open browser and for example type `http://localhost:8000/tampilBerdasarkanSpeaker/0` on address bar

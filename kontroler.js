@@ -59,3 +59,17 @@ exports.tampilBerdasarkanMotionState = function(req, res) {
     }
   })
 }
+
+// Menampilkan Berdasarkan Speaker State
+exports.tampilBerdasarkanSpeakerState = function(req, res) {
+  
+  let speaker = req.params.speakerState;
+
+  connection.query('SELECT * FROM pik_golf_island WHERE speaker_state = ?', [speaker], function(error, rows, fields) {
+    if (error) {
+      console.log(error);
+    } else {
+      response.ok(rows, res);
+    }
+  })
+}
