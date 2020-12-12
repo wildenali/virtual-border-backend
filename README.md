@@ -63,3 +63,24 @@ VALUES  (NULL, 'node_1', '0', '0', current_timestamp(), current_timestamp()),
 
 5. Run Server
    - Run the server file with the command `$ node server.js` in the terminal
+
+# CRUD - Read All Data
+
+- Insert example data to database like below, and for example insert 4 times
+
+```
+INSERT INTO `pik_golf_island` (`id_sensor`, `name`, `motion_state`, `speaker_state`, `motion_timestamp`, `speaker_timestamp`)
+VALUES  (NULL, 'node_1', '0', '0', current_timestamp(), current_timestamp()),
+        (NULL, 'node_2', '0', '0', current_timestamp(), current_timestamp()),
+        (NULL, 'node_3', '0', '0', current_timestamp(), current_timestamp()),
+        (NULL, 'node_4', '0', '0', current_timestamp(), current_timestamp()),
+        (NULL, 'node_5', '0', '0', current_timestamp(), current_timestamp()),
+        (NULL, 'node_6', '0', '0', current_timestamp(), current_timestamp()),
+        (NULL, 'node_7', '0', '0', current_timestamp(), current_timestamp()),
+        (NULL, 'node_8', '0', '0', current_timestamp(), current_timestamp()),
+        (NULL, 'node_9', '0', '0', current_timestamp(), current_timestamp()),
+        (NULL, 'node_10', '0', '0', current_timestamp(), current_timestamp());
+```
+
+- Edit the kontroler.js and routes.js files
+- Run the server file with the command `$ node server.js` in the terminal
