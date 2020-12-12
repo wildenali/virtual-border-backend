@@ -17,3 +17,17 @@ exports.tampilSemuaSensorMotion = function(req, res) {
     }
   })
 }
+
+// Menampilkan semua data sensor
+exports.tampilBerdasarkanIdSensor = function(req, res) {
+  
+  let id = req.params.id;
+
+  connection.query('SELECT * FROM pik_golf_island WHERE id_sensor = ?', [id], function(error, rows, fields) {
+    if (error) {
+      console.log(error);
+    } else {
+      response.ok(rows, res);
+    }
+  })
+}

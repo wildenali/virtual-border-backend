@@ -11,4 +11,7 @@ module.exports = function(app) {
 
   app.route('/tampilSemuaSensor')
     .get(jsonku.tampilSemuaSensorMotion);
+  
+  app.route('/tampilBerdasarkanId/:id')
+    .get(jsonku.tampilBerdasarkanIdSensor);
 }
