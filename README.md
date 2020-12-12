@@ -37,3 +37,8 @@ VALUES  (NULL, 'node_1', '0', '0', current_timestamp(), current_timestamp()),
         (NULL, 'node_9', '0', '0', current_timestamp(), current_timestamp()),
         (NULL, 'node_10', '0', '0', current_timestamp(), current_timestamp());
 ```
+
+# Create a Server file
+
+- Create a new file and name it server.js
+- Run the server file with the command `$ node server.js` in the terminal
