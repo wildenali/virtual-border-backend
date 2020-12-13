@@ -23,4 +23,7 @@ module.exports = function(app) {
 
   app.route('/tampilBerdasarkanSpeaker/:speakerState')
     .get(jsonku.tampilBerdasarkanSpeakerState);
+  
+  app.route('/tambahSensorData')
+    .post(jsonku.tambahSensorData);
 }

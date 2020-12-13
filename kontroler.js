@@ -73,3 +73,19 @@ exports.tampilBerdasarkanSpeakerState = function(req, res) {
     }
   })
 }
+
+// CRUD, Create
+// Menambahkan data sensor
+exports.tambahSensorData = function(req, res) {
+  var name = req.body.name;
+  let motion = req.body.motionState;
+  let speaker = req.body.speakerState;
+
+  connection.query('INSERT INTO pik_golf_island (name, motion_state, speaker_state) VALUE (?,?,?)', [name, motion, speaker], function(error, rows, fields) {
+    if (error) {
+      console.log(error);
+    } else {
+      response.ok("Berhasil menambahkan data", res);
+    }
+  })
+} 

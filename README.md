@@ -110,3 +110,19 @@ VALUES  (NULL, 'node_1', '0', '0', current_timestamp(), current_timestamp()),
    - Edit the kontroler.js and routes.js files
    - Run the server file with the command `$ node server.js` in the terminal
    - Open browser and for example type `http://localhost:8000/tampilBerdasarkanSpeaker/0` on address bar
+
+# CRUD - Create Data
+
+1. Edit the kontroler.js and routes.js files
+2. Test with postman:
+
+   - Open postman
+   - Choose `POST` method
+   - Fill the post method with `http://localhost:8000/tambahSensorData`
+   - Choose `Body`
+   - Choose `x-www-form-urlencoded`
+   - Fill the Key and Value like below
+     - name: node_2
+     - motionState: 1
+     - speakerState: 1
+   - Click `Send`
