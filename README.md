@@ -126,3 +126,4 @@ VALUES  (NULL, 'node_1', '0', '0', current_timestamp(), current_timestamp()),
      - motionState: 1
      - speakerState: 1
    - Click `Send`
+     ...
